@@ -3185,10 +3185,9 @@ a {
   left: 0;
   width: 100%;
   z-index: 100;
-  opacity: 0.5; }
-  #lines-top svg {
-    width: 100%;
-    height: 80px; }
+  opacity: 0.2;
+  height: 15px;
+  background-image: url(../images/lines.png); }
 
 #header {
   padding-bottom: 80px;
@@ -3249,12 +3248,18 @@ a {
   max-width: 900px;
   margin: 0 auto; }
 
+.section__info {
+  background-color: #fff;
+  padding: 40px 80px;
+  margin-top: -40px;
+  border-radius: 5px; }
+
 #what-we-do,
 #you-can-do-this {
   position: relative; }
 
 #what-we-do .section__inner {
-  max-width: 500px;
+  max-width: 600px;
   max-width: 0 auto; }
 #what-we-do a {
   color: #636175;
@@ -3272,6 +3277,10 @@ a {
   @media (max-width: 600px) {
     #what-we-do a + a:before {
       content: none; } }
+
+#you-can-do-this .section__info {
+  max-width: 600px;
+  margin: -40px auto -20px; }
 
 .arrow-down {
   width: 40px;
@@ -3291,7 +3300,7 @@ a {
 
 #footer {
   position: relative;
-  height: 85px;
+  height: 80px;
   background-color: #f26c4f;
   text-align: center; }
   #footer .copy {
@@ -3315,13 +3324,11 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.5;
-  z-index: 1; }
-  #lines-bottom svg {
-    width: 100%;
-    height: 80px; }
-  #lines-bottom .hbar {
-    fill: #666; }
+  width: 100%;
+  opacity: 0.3;
+  z-index: 1;
+  height: 80px;
+  background-image: url(../images/lines.png); }
 
 .btn--big {
   display: inline-block;
@@ -3349,8 +3356,14 @@ a {
   z-index: 1; }
   .images .image {
     position: absolute;
+    opacity: 0;
     top: 0;
-    left: 0; }
+    left: 0;
+    animation: imageAnimation 8s linear infinite 0s;
+    border-radius: 5px; }
+
+.image:nth-child(1) {
+  opacity: 1; }
 
 .image:nth-child(2) {
   animation-delay: 2s; }
@@ -3416,6 +3429,9 @@ a {
   font-size: 30px;
   margin-bottom: 20px;
   margin-top: 20px; }
+  @media (max-width: 600px) {
+    .contact__email {
+      font-size: 24px; } }
   .contact__email a {
     display: inline-block;
     color: #636175;

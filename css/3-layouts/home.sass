@@ -9,11 +9,10 @@
 	left: 0
 	width: 100%
 	z-index: 100
-	opacity: .5
+	opacity: .2
+	height: 15px
+	background-image: url(../images/lines.png)
 
-	svg
-		width: 100%
-		height: 80px
 
 	
 #header
@@ -76,6 +75,13 @@
 	max-width: 900px
 	margin: 0 auto
 
+.section__info
+	background-color: #fff
+	padding: 40px 80px
+	margin-top: -40px
+	border-radius: 5px
+
+
 #what-we-do,
 #you-can-do-this
 	//background-color: #f2f1ed
@@ -85,7 +91,7 @@
 #what-we-do
 
 	.section__inner
-		max-width: 500px
+		max-width: 600px
 		max-width: 0 auto
 
 	a
@@ -111,7 +117,10 @@
 				content: none
 
 #you-can-do-this
-	//padding-bottom: 80px
+	
+	.section__info
+		max-width: 600px
+		margin: -40px auto -20px
 
 .arrow-down
 	width: 40px
@@ -131,7 +140,7 @@
 
 #footer
 	position: relative
-	height: 85px
+	height: 80px
 	//line-height: 85px
 	background-color: $color_accent
 	text-align: center
@@ -157,15 +166,11 @@
 	position: absolute
 	top: 0
 	left: 0
-	opacity: .5
+	width: 100%
+	opacity: .3
 	z-index: 1
-	
-	svg
-		width: 100%
-		height: 80px
-
-	.hbar
-		fill: #666
+	height: 80px
+	background-image: url(../images/lines.png)
 
 
 .btn--big
@@ -198,11 +203,14 @@
 
 	.image
 		position: absolute
+		opacity: 0
 		top: 0
 		left: 0
-		//animation: imageAnimation 8s linear infinite 0s
+		animation: imageAnimation 8s linear infinite 0s
+		border-radius: 5px
 
 .image:nth-child(1)
+	opacity: 1
 	//animation-delay: 2s
 
 .image:nth-child(2)
@@ -248,6 +256,9 @@
 	font-size: 30px
 	margin-bottom: 20px
 	margin-top: 20px
+
+	+bp(s)
+		font-size: 24px
 
 	a
 		display: inline-block
