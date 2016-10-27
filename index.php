@@ -24,9 +24,9 @@
 			<a href="">Accounting</a>
 			<a href="">Bookkeeping</a>
 			<a href="">Business Consulting</a>
-			<a href="">Payroll</a>
+			
 			<a href="">IRS Tax Problems</a>
-			<a href="">Business Valuation</a>
+			
 		</div>
 	</div>
 </div>
