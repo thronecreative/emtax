@@ -67,8 +67,8 @@
 	<div id="contact" class="section">
 		<div class="section__inner">
 			<h2 class="section__heading">Contact us today:</h2>
-			<div class="contact__email"><a href="mailto:info@emtaxservice.com">info@emtaxservice.com</a></div>
-			<div class="contact__phone">(323) 123-4567</div>
+			<div class="contact__email"><a href="mailto:erin@emtaxservice.com">erin@emtaxservice.com</a></div>
+			<div class="contact__phone">(310) 897-5436</div>
 			<a href="#" class="contact__close contact-hide-btn">close</a>
 		</div>
 	</div>

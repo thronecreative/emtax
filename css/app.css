@@ -3353,14 +3353,16 @@ a {
   padding-top: 57%;
   position: relative;
   margin: -40px auto 0;
-  z-index: 1; }
+  z-index: 1;
+  line-height: 0; }
   .images .image {
     position: absolute;
     opacity: 0;
     top: 0;
     left: 0;
     animation: imageAnimation 8s linear infinite 0s;
-    border-radius: 5px; }
+    border-radius: 5px;
+    background-color: #f2f1ed; }
 
 .image:nth-child(1) {
   opacity: 1; }
